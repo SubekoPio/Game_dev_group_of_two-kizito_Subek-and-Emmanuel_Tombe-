@@ -6,7 +6,7 @@ from math import sqrt
 # Initialize Pygame
 pygame.init()
 pygame.font.init()
-# Try to initialize the mixer for audio; continue gracefully if unavailable
+
 try:
     pygame.mixer.init()
 except Exception:
@@ -685,4 +685,5 @@ class Game:
 
 if __name__ == "__main__":
     game = Game()
+
     game.run()
